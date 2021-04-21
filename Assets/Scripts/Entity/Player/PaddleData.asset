@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aa879779d4807a4da442af034119117, type: 3}
+  m_Name: PaddleData
+  m_EditorClassIdentifier: 
+  m_StretchSound: {fileID: 8300000, guid: 319216f7e869a384a9c266ddccb3aab8, type: 3}
+  m_ShrinkSound: {fileID: 8300000, guid: 09cf883d33019ce40b035c988ca074ae, type: 3}
+  m_BreakSound: {fileID: 8300000, guid: 413d01067517aa74cb75fe7790272a1a, type: 3}
+  m_FullHeart: {fileID: -205270267638800340, guid: 9a9c0d512d9d7044cbde9067be68324d, type: 3}
+  m_EmptyHeart: {fileID: 6960772035834626590, guid: 9a9c0d512d9d7044cbde9067be68324d, type: 3}
+  m_DefaultSpeed: 8.5
+  m_PoweredUpSpeed: 12
+  m_BaseMoveLimit: 5.5
+  m_WallLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  m_ShortPaddleSize: {x: 1.888889, y: 0.5}
+  m_LongPaddleSize: {x: 2.615, y: 0.5}
+  m_WallDetectSize: {x: 1, y: 1}
+  m_RightOffset: {x: -1.445, y: 0}
+  m_LeftOffset: {x: 1.445, y: 0}
