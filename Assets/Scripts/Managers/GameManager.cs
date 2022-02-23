@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
 
     [Header("Game")]
     [SerializeField] private float m_RestartDelay;
+    private IEnumerator m_SpeedCoroutine;
+    private IEnumerator m_SizeCoroutine;
 
     [Header("Paddle")]
     [SerializeField] private Transform m_PaddleSpawnpoint;
@@ -142,10 +144,12 @@ public class GameManager : MonoBehaviour
         switch (type)
         {
             case PowerUpType.SpeedUp:
-                StartCoroutine(m_CurrentPaddle.GetComponent<Paddle>().SpeedUp(time));
+                m_SpeedCoroutine = m_CurrentPaddle.GetComponent<Paddle>().SpeedUp(time);
+                StartCoroutine(m_SpeedCoroutine);
                 break;
             case PowerUpType.SizeUp:
-                StartCoroutine(m_CurrentPaddle.GetComponent<Paddle>().SizeUp(time));
+                m_SizeCoroutine = m_CurrentPaddle.GetComponent<Paddle>().SizeUp(time);
+                StartCoroutine(m_SizeCoroutine);
                 break;
             default:
                 break;
